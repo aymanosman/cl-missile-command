@@ -1,0 +1,16 @@
+# Defender
+
+Port of [[https://github.com/massung][Jeffrey Massung's]] example game [[https://github.com/massung/r-cade/blob/main/examples/defender.rkt][defender.rkt]] to Common Lisp.
+
+This was a project to for me to learn Common Lisp and Raylib.
+
+
+# Instructions
+
+#+begin_src shell
+  # Build
+  sbcl --load release.lisp --eval '(sb-ext:exit)'
+
+  # Run
+  ./defender
+#+end_src
