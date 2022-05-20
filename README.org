@@ -1,11 +1,10 @@
-# Defender
+* Defender
 
-Port of [[https://github.com/massung][Jeffrey Massung's]] example game [[https://github.com/massung/r-cade/blob/main/examples/defender.rkt][defender.rkt]] to Common Lisp.
+This is a port of [[https://github.com/massung][Jeffrey Massung's]] example game [[https://github.com/massung/r-cade/blob/main/examples/defender.rkt][defender.rkt]] to Common Lisp.
 
 This was a project to for me to learn Common Lisp and Raylib.
 
-
-# Instructions
+* Building
 
 #+begin_src shell
   # Build
@@ -13,4 +12,12 @@ This was a project to for me to learn Common Lisp and Raylib.
 
   # Run
   ./defender
+#+end_src
+
+* Hacking
+
+#+begin_src shell
+  sbcl --load dev.lisp
+
+  # then connect with sly on port 4005
 #+end_src
