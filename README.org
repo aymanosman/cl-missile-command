@@ -1,6 +1,6 @@
 * Defender
 
-[[./defender-game.png][game]]
+[[./defender-game.png]]
 
 This is a port of [[https://github.com/massung][Jeffrey Massung's]] example game [[https://github.com/massung/r-cade/blob/main/examples/defender.rkt][defender.rkt]] to Common Lisp.
 
