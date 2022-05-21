@@ -1,6 +1,10 @@
 (ql:quickload "slynk")
 (slynk:create-server :port 4005 :dont-close t)
 
+(require :asdf)
+
+(push "raylib/" asdf:*central-registry*)
+
 (ql:quickload :raylib)
 (ql:quickload :nibbles)
 
