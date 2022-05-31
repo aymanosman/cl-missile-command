@@ -8,9 +8,11 @@ This was a project to for me to learn Common Lisp and Raylib.
 
 * Building
 
+Requires [[https://github.com/sbcl/sbcl][SBCL]] and [[https://www.quicklisp.org/][Quicklisp]].
+
 #+begin_src shell
   # Build
-  sbcl --load release.lisp --eval '(sb-ext:exit)'
+  sh make.sh
 
   # Run
   ./defender
