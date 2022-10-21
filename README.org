@@ -1,6 +1,6 @@
 * Missile Commmand
 
-[[./defender-game.png]]
+[[./missile-command-game.png]]
 
 This is a port of [[https://github.com/massung][Jeffrey Massung's]] example game [[https://github.com/massung/r-cade/blob/main/examples/defender.rkt][defender.rkt]] to Common Lisp.
 
@@ -15,7 +15,7 @@ Requires [[https://github.com/sbcl/sbcl][SBCL]] and [[https://www.quicklisp.org/
   sh make.sh
 
   # Run
-  ./defender
+  ./missile-commnad
 #+end_src
 
 * Hacking

@@ -1,5 +1,7 @@
 (in-package :raylib)
 
+;; TODO find a better way to build on M1 Macs
+(cc-flags "-I" "/opt/homebrew/Cellar/raylib/4.2.0/include")
 (include "raylib.h")
 
 (cstruct audio-stream "AudioStream"

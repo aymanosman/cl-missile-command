@@ -557,7 +557,7 @@ void main() {
 
 (defun main ()
   "Make sure you don't call me inside Emacs!"
-  (init-window screen-width screen-height "Defender")
+  (init-window screen-width screen-height "Missile Command")
   (init-audio-device)
   (unwind-protect
        (progn

@@ -11,4 +11,4 @@
 (load "font.lisp")
 (load "main.lisp")
 
-(sb-ext:save-lisp-and-die "defender" :executable t :toplevel 'raylib::main)
+(sb-ext:save-lisp-and-die "missile-command" :executable t :toplevel 'raylib::main)
