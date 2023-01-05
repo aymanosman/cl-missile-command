@@ -1,4 +1,4 @@
-* Missile Commmand
+* Missile Command
 
 [[./missile-command-game.png]]
 
