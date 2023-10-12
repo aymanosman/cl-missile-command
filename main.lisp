@@ -406,6 +406,26 @@
         (y (- (get-game-mouse-y) 2)))
     (draw x y (color 7) reticle-texture)))
 
+(defun draw-game ()
+  (begin-texture-mode target)
+  (clear-background +black+)
+  (draw-ground)
+  (draw-cities)
+  (draw-silos)
+  (draw-destroyed)
+  (draw-enemy-missiles)
+  (dolist (m player-missiles)
+    (draw-player-missile m))
+  (dolist (e enemy-explosions)
+    (draw-explosion e))
+  (dolist (e player-explosions)
+    (draw-explosion e))
+  (draw-reticle)
+  (draw-score)
+  (end-texture-mode)
+
+  (draw-frame))
+
 ;; MAIN
 
 (defun level ()
@@ -434,24 +454,7 @@
   (update-enemy-missiles)
   (update-player-missiles)
 
-  (begin-texture-mode target)
-  (clear-background +black+)
-  (draw-ground)
-  (draw-cities)
-  (draw-silos)
-  (draw-destroyed)
-  (draw-enemy-missiles)
-  (dolist (m player-missiles)
-    (draw-player-missile m))
-  (dolist (e enemy-explosions)
-    (draw-explosion e))
-  (dolist (e player-explosions)
-    (draw-explosion e))
-  (draw-reticle)
-  (draw-score)
-  (end-texture-mode)
-
-  (draw-frame))
+  (draw-game))
 
 (defun game-over ()
   (when (btn-any)
@@ -469,7 +472,7 @@
 (defun paused ()
   (when (btn-any)
     (setf game-state :level))
-  (draw-frame))
+  (draw-game))
 
 (defun game-loop ()
   (if (window-should-close) (return-from game-loop))
