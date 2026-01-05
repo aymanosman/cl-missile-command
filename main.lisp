@@ -440,14 +440,16 @@
           (incf score (apply #'+ (multiple-value-list (level-bonus))))
           (return-from level))))
 
-  ;; (when (is-key-pressed :r)
-  ;;   (setf game-state :menu)
-  ;;   (setup)
-  ;;   (return-from level))
+  #+:dev
+  (when (is-key-pressed :r)
+    (setf game-state :menu)
+    (setup)
+    (return-from level))
 
-  ;; (when (is-key-pressed :p)
-  ;;   (setf game-state :paused)
-  ;;   (return-from level))
+  #+:dev
+  (when (is-key-pressed :p)
+    (setf game-state :paused)
+    (return-from level))
 
   (update-enemy-explosions)
   (update-player-explosions)

@@ -1,5 +1,5 @@
 (ql:quickload "slynk")
-(slynk:create-server :port 4005 :dont-close t)
+(slynk:create-server :port 3005 :dont-close t)
 
 (require :asdf)
 
@@ -15,5 +15,7 @@
 (load "main.lisp")
 
 (in-package :raylib)
+
+(push :dev *features*)
 
 (main)
