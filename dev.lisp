@@ -8,6 +8,8 @@
 (ql:quickload :raylib)
 (ql:quickload :nibbles)
 
+(push :dev *features*)
+
 (load "wav.lisp")
 (load "sound.lisp")
 (load "sprite.lisp")
@@ -15,7 +17,5 @@
 (load "main.lisp")
 
 (in-package :raylib)
-
-(push :dev *features*)
 
 (main)
