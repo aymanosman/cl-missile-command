@@ -15,7 +15,7 @@ Requires [[https://github.com/sbcl/sbcl][SBCL]] and [[https://www.quicklisp.org/
   sh make.sh
 
   # Run
-  ./missile-commnad
+  ./missile-command
 #+end_src
 
 * Hacking
@@ -23,5 +23,5 @@ Requires [[https://github.com/sbcl/sbcl][SBCL]] and [[https://www.quicklisp.org/
 #+begin_src shell
   sbcl --load dev.lisp
 
-  # then connect with sly on port 4005
+  # then connect with sly on port 3005
 #+end_src
